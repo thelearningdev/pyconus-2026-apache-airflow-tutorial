@@ -6,17 +6,17 @@ from airflow.providers.standard.operators.hitl import ApprovalOperator
 from airflow.sdk import Asset
 
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).parent.parent.parent
 
 raw_sales_asset = Asset("raw_sales_starter")
 
 
 @dag(
-    dag_id="03b_validate_sales_starter",
+    dag_id="12_validate_sales_starter",
     start_date=datetime(2026, 5, 1),
     schedule=raw_sales_asset,
     catchup=True,
-    tags=["starter"],
+    tags=["bookshop", "starter"],
 )
 def validate_sales():
 
