@@ -33,9 +33,9 @@ Ensure you've followed the setup guide from Readme.md file.
 8. To fix `show_env` : Go to **Admin > Variables** and create a new variable:
    - Key: `bookshop_env`
    - Value: `prod`
-9. To fix `check_db_with_hook` Set up the `bookshop_postgres` connection in the Airflow UI: Go to **Admin > Connections > + Add**
+9. To fix `check_db_with_hook` Set up the `bookops_postgres` connection in the Airflow UI: Go to **Admin > Connections > + Add**
 10. Fill in:
-    - **Conn ID**: `bookshop_postgres`
+    - **Conn ID**: `bookops_postgres`
     - **Conn Type**: `Postgres`
     - **Host**: `postgres`
     - **Database**: `bookops`
